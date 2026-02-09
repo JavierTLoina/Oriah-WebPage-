@@ -43,12 +43,12 @@ export default function Nav({
             </a>
           </li>
           <li>
-            <a href="#titleProductos" className={textColor}>
+            <a href="#productos" className={textColor}>
               Productos
             </a>
           </li>
           <li>
-            <a href="#titleProductos" className={textColor}>
+            <a href="#productos" className={textColor}>
               Precios
             </a>
           </li>
