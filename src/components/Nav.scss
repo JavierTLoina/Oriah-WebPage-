@@ -41,16 +41,28 @@
   top: 0;
   z-index: 1000;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  font-size: 1.2rem;
-  font-weight: 530;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border-top: 2px solid rgba(128, 128, 128, 0.1);
   border-bottom: 2px solid rgba(128, 128, 128, 0.1);
+  transition: background-color 0.4s ease;
+
+  @media (max-width: 750px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.nav-left {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .logo {
@@ -58,9 +70,15 @@
   height: auto;
   cursor: pointer;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 1200px) {
+    width: 9rem;
+  }
+  @media (max-width: 860px) {
+    width: 7.5rem;
   }
 }
 
@@ -68,41 +86,194 @@
   display: flex;
   gap: 3.5rem;
   list-style: none;
+  transition: gap 0.3s ease;
+  font-size: 1.25rem;
+  font-weight: 550;
 
   li a {
     text-decoration: none;
     position: relative;
     padding: 0.5rem 0;
-
     &::after {
       content: "";
       position: absolute;
       width: 0;
-      height: 1px;
+      height: 1.5px;
       bottom: 0;
       left: 0;
       background-color: currentColor;
       transition: width 0.3s ease;
     }
-
     &:hover::after {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    gap: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 860px) {
+    gap: 1.8rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 750px) {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100vh;
+    gap: 3rem;
+    font-size: 1.5rem;
+    transition: 0.5s ease;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+    z-index: 1500;
+
+    &.active {
+      left: 0;
     }
   }
 }
 
 .menu-2 {
+  justify-self: end;
   display: flex;
   align-items: center;
-  gap: 3rem;
-  cursor: pointer;
+  gap: 2.2rem;
 
-  h1 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: opacity 0.3s;
-    &:hover {
-      opacity: 0.6;
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+
+    svg {
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &.instagram:hover {
+        fill: #e1306c;
+      }
+      &.facebook:hover {
+        fill: #1877f2;
+      }
     }
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 66px;
+  height: 34px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e4e4e7;
+    transition: 0.4s;
+    border-radius: 34px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 5;
+    }
+
+    .icon-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 9px;
+      svg {
+        width: 18px;
+        fill: #ffa8a8;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  input:checked + .slider {
+    background-color: #27272a;
+    &:before {
+      transform: translateX(32px);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .theme-switch {
+    width: 64px;
+    height: 34px;
+
+    &:before {
+      transform: translateX(23px);
+    }
+
+    .icon-container {
+      padding: 0 5px;
+      svg {
+        width: 14px;
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  margin: 0rem 2rem 0rem 1rem;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 2000;
+
+  span {
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  &.open {
+    span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 750px) {
+    display: flex;
   }
 }

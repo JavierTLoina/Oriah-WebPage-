@@ -111,7 +111,7 @@ export default function MainContent() {
   return (
     <>
       <main className="main-container">
-        <h1 id="sobreNosotros">Sobre Nosotros</h1>
+        <h1 id="sobreNosotros">Sobre Oriah</h1>
         <div className="p-box">
           <p className="main-p">
             Oriah nace del deseo de crear piezas con intención y significado.

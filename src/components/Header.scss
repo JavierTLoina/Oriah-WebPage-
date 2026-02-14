@@ -7,6 +7,12 @@
   animation: changeImagePerTime 10s infinite ease-in-out;
 }
 
+@media (max-width: 840px) {
+  .header-container {
+    height: 60vh;
+  }
+}
+
 .title {
   position: absolute;
   font-weight: 400;
@@ -42,6 +48,48 @@
   }
 }
 
+@media (max-width: 800px) {
+  .title {
+    font-size: 4.5rem;
+    left: 15%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 4.3rem;
+    left: 11%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 4.1rem;
+    left: 8%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 4.7rem;
+    line-height: 1.1;
+    left: 4%;
+    top: 15%;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 4rem;
+    line-height: 1.1;
+    left: 4%;
+    top: 20%;
+  }
+}
+
 .market {
   display: inline-block;
   transition: all 0.3s ease;
@@ -58,6 +106,20 @@
   .market {
     font-size: 10rem;
     line-height: 0.7;
+  }
+}
+
+@media (max-width: 800px) {
+  .market {
+    font-size: 8rem;
+    text-shadow: 0 5px 10px #ffb3d9;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .market {
+    font-size: 6rem;
   }
 }
 
@@ -89,6 +151,13 @@
 @media (max-width: 1450px) {
   .contact-Btn {
     font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .contact-Btn {
+    font-size: 1.2rem;
+    margin-top: 3rem;
   }
 }
 
@@ -200,6 +269,12 @@
 @media (max-width: 1300px) {
   .after-img {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .after-img {
+    font-size: 1rem;
   }
 }
 

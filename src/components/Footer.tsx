@@ -43,7 +43,7 @@ export default function Footer() {
             <ul className="contact-list">
               <li>
                 <a href="oficialoriah@gmail.com" className="contact-link">
-                  📧 oficialoriah@gmail.com
+                  oficialoriah@gmail.com
                 </a>
               </li>
               <li>
@@ -53,12 +53,12 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="contact-link"
                 >
-                  💬 WhatsApp
+                  WhatsApp
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="contact-link">
-                  📱 +1 (234) 567-890
+                  Llamar!
                 </a>
               </li>
             </ul>
