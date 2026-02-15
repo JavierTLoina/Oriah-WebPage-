@@ -6,6 +6,18 @@
   margin-top: 15rem;
 }
 
+@media (max-width: 700px) {
+  .footer {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    margin-top: 5rem;
+  }
+}
+
 .footer-video-section {
   position: relative;
   width: 100%;

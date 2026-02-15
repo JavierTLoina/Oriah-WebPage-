@@ -15,6 +15,12 @@
   }
 }
 
+@media (max-width: 420px) {
+  .header-container {
+    height: 30vh;
+  }
+}
+
 .title {
   position: absolute;
   font-weight: 400;
