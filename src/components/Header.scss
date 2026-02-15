@@ -278,6 +278,18 @@
   }
 }
 
+@media (max-width: 650px) {
+  .after-img {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .after-img {
+    padding: 1.5rem;
+  }
+}
+
 @keyframes scroll-infinito {
   0% {
     transform: translateX(0);
