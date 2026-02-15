@@ -4,7 +4,9 @@
   height: 77.5vh;
   background-size: cover;
   background-position: center;
-  animation: changeImagePerTime 10s infinite ease-in-out;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/Main1.jpg");
 }
 
 @media (max-width: 840px) {
@@ -195,51 +197,6 @@
 
 .contact-Btn:active {
   transform: translateY(-2px);
-}
-
-@keyframes changeImagePerTime {
-  0% {
-    background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../assets/Main1.jpg");
-    background-position: center 1rem;
-  }
-  10%,
-  25% {
-    background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../assets/Main1.jpg");
-    background-position: center;
-  }
-
-  35%,
-  55% {
-    background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../assets/Main2.jpg");
-    background-position: center;
-  }
-
-  65% {
-    background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../assets/Main3.jpg");
-    background-position: center 1rem;
-  }
-  75%,
-  90% {
-    background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../assets/Main3.jpg");
-    background-position: center;
-  }
-
-  100% {
-    background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../assets/Main1.jpg");
-    background-position: center;
-  }
 }
 
 .ticker-wrapper {
