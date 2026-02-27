@@ -1,14 +1,30 @@
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 import "./Header.scss";
 
 export default function Header() {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Iluminan", "Inspiran", "Innovan"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <div className="header-container">
         <h1 className="title">
           Mas que velas<br></br>Detalles que{" "}
-          <a className="market" href="#">
-            Iluminan
-          </a>
+          <a className="market" href="#" ref={el}></a>
           <br></br>
           <button className="contact-Btn">
             <a href="#contacto">
@@ -17,13 +33,13 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="btn-icon"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                 />
               </svg>
