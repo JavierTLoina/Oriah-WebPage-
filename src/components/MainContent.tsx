@@ -7,6 +7,7 @@ import product5 from "../assets/product5.png";
 import product6 from "../assets/product6.png";
 import product7 from "../assets/product7.png";
 import product8 from "../assets/product8.png";
+import product9 from "../assets/product9.png";
 
 const CheckIcon = () => (
   <svg
@@ -102,6 +103,16 @@ const products = [
     description:
       "Vela aromática individual con forma floral, elaborada cuidadosamente para aportar aroma, luz y armonía a cualquier espacio.",
     price: "RD$150",
+    instagramUrl:
+      "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
+  },
+  {
+    id: 9,
+    image: product9,
+    title: "Producto Artesanal Exclusivo",
+    description:
+      "Pieza artesanal única creada con materiales de alta calidad, perfecta para decorar o regalar. Diseño pensado para integrarse con cualquier estilo y aportar un toque especial al ambiente.",
+    price: "RD$200",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
   },
