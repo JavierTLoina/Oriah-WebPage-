@@ -117,7 +117,7 @@
 
   @media (max-width: 750px) {
     li a {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
     }
 
     li a.menu-contact-btn {
@@ -126,7 +126,7 @@
       background-color: #cc2366;
       color: #ffffff;
       border-radius: 50px;
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       font-weight: 700;
       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       box-shadow: 0 8px 24px rgba(204, 35, 102, 0.3);
@@ -145,11 +145,12 @@
     position: fixed;
     top: 0;
     left: -100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     overflow-y: auto;
     gap: 3rem;
     transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1);

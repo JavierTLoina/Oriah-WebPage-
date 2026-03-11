@@ -43,7 +43,9 @@ export default function Nav({ mode, toggleMode, textColor }: NavProps) {
         </div>
 
         <ul
-          className={`menu ${menuOpen ? "active" : ""} ${isLight ? "light-theme" : "dark-theme"}`}
+          className={`menu ${menuOpen ? "active" : ""} ${
+            isLight ? "light-theme" : "dark-theme"
+          }`}
         >
           <li>
             <a
