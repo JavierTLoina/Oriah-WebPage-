@@ -36,7 +36,7 @@ export default function Nav({ mode, toggleMode, textColor }: NavProps) {
           </div>
           <img
             src={isLight ? LogoBlack : LogoWhite}
-            alt="Logo"
+            alt="Oriah Logo - Velas Artesanales y Decorativos"
             className="logo"
             onClick={() => window.location.reload()}
           />
@@ -79,6 +79,15 @@ export default function Nav({ mode, toggleMode, textColor }: NavProps) {
               onClick={() => setMenuOpen(false)}
             >
               Contacto
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contacto"
+              onClick={() => setMenuOpen(false)}
+              className="menu-contact-btn"
+            >
+              Contáctanos
             </a>
           </li>
         </ul>

@@ -6,6 +6,9 @@ html {
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
   height: 100%;
+  /* Optimización para performance */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {

@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import MainVideo from "../assets/MainVideo.mp4";
+import MainVideo from "../assets/MainVideo.webm";
 import LogoWhite from "../assets/logoWhite.png";
 
 export default function Footer() {
@@ -8,8 +8,8 @@ export default function Footer() {
   return (
     <footer className="footer" id="contacto">
       <div className="footer-video-section">
-        <video autoPlay muted loop className="footer-video">
-          <source src={MainVideo} type="video/mp4" />
+        <video autoPlay muted loop className="footer-video" loading="lazy">
+          <source src={MainVideo} type="video/webm" />
           Tu navegador no soporta videos HTML5
         </video>
         <div className="footer-video-overlay"></div>
@@ -22,7 +22,11 @@ export default function Footer() {
               </h3>
             </div>
             <div className="logo-section">
-              <img src={LogoWhite} alt="Oriah Logo" className="footer-logo" />
+              <img
+                src={LogoWhite}
+                alt="Oriah Logo - Velas Artesanales"
+                className="footer-logo"
+              />
             </div>
           </div>
         </div>

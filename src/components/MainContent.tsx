@@ -1,13 +1,16 @@
 import "../components/MainContent.scss";
-import product1 from "../assets/product1.png";
-import product2 from "../assets/product2.png";
-import product3 from "../assets/product3.png";
-import product4 from "../assets/product4.png";
-import product5 from "../assets/product5.png";
-import product6 from "../assets/product6.png";
-import product7 from "../assets/product7.png";
-import product8 from "../assets/product8.png";
-import product9 from "../assets/product9.png";
+import product1 from "../assets/product1.webp";
+import product2 from "../assets/product2.webp";
+import product3 from "../assets/product3.webp";
+import product4 from "../assets/product4.webp";
+import product5 from "../assets/product5.webp";
+import product6 from "../assets/product6.webp";
+import product7 from "../assets/product7.webp";
+import product8 from "../assets/product8.webp";
+import product9 from "../assets/product9.webp";
+import product10 from "../assets/product10.webp";
+import product11 from "../assets/product11.webp";
+import product12 from "../assets/product12.webp";
 
 const CheckIcon = () => (
   <svg
@@ -116,6 +119,26 @@ const products = [
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
   },
+  {
+    id: 10,
+    image: product10,
+    title: "Arreglo Floral Mixto",
+    description:
+      "Combinación armoniosa de flores de yeso y velas aromáticas en una base decorativa. Una creación versátil que une belleza visual con aroma delicado, perfecta para regalos especiales.",
+    price: "RD$380",
+    instagramUrl:
+      "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
+  },
+  {
+    id: 11,
+    image: product11,
+    title: "Escultura de Yeso Artística",
+    description:
+      "Pieza escultórica desarrollada con técnicas artesanales avanzadas. Cada detalle es cuidadosamente moldeado para crear una obra de arte única que transformará cualquier espacio.",
+    price: "RD$320",
+    instagramUrl:
+      "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
+  },
 ];
 
 export default function MainContent() {
@@ -182,8 +205,9 @@ export default function MainContent() {
                 <div className="product-image-container">
                   <img
                     src={product.image}
-                    alt={product.title}
+                    alt={`${product.title} - Vela artesanal de Oriah`}
                     className="product-image"
+                    loading="lazy"
                   />
                 </div>
                 <div className="product-info">
@@ -195,12 +219,40 @@ export default function MainContent() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-instagram"
+                    aria-label={`Ver ${product.title} en Instagram`}
                   >
                     Instagram
                   </a>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="custom-product-section">
+          <div className="custom-product-card">
+            <div className="custom-product-content">
+              <div className="custom-product-text">
+                <h2 className="custom-product-title">Personaliza Tu Propio Arreglo</h2>
+                <p className="custom-product-subtitle">Crea una pieza única y especial</p>
+                <p className="custom-product-description">
+                  ¿Tienes una visión? En Oriah podemos hacerla realidad. Desde flores de yeso personalizadas 
+                  hasta arreglos aromáticos a tu medida, diseñamos cada detalle según tus preferencias y presupuesto. 
+                  Contacta con nosotros para conocer las opciones de personalización disponibles.
+                </p>
+                <a
+                  href="https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="custom-product-btn"
+                >
+                  Consulta tu Personalización
+                </a>
+              </div>
+              <div className="custom-product-image">
+                <img src={product12} alt="Personalización" className="custom-image" />
+              </div>
+            </div>
           </div>
         </div>
       </main>

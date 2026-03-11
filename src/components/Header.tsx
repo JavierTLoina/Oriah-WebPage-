@@ -1,30 +1,12 @@
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
 import "./Header.scss";
 
 export default function Header() {
-  const el = useRef(null);
-
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["Iluminan", "Inspiran", "Innovan"],
-      typeSpeed: 60,
-      backSpeed: 40,
-      backDelay: 1500,
-      loop: true,
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
   return (
     <>
       <div className="header-container">
         <h1 className="title">
           Mas que velas<br></br>Detalles que{" "}
-          <a className="market" href="#" ref={el}></a>
+          <span className="market">Iluminan</span>
           <br></br>
           <button className="contact-Btn">
             <a href="#contacto">
