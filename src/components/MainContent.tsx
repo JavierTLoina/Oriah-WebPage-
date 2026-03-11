@@ -233,12 +233,18 @@ export default function MainContent() {
           <div className="custom-product-card">
             <div className="custom-product-content">
               <div className="custom-product-text">
-                <h2 className="custom-product-title">Personaliza Tu Propio Arreglo</h2>
-                <p className="custom-product-subtitle">Crea una pieza única y especial</p>
+                <h2 className="custom-product-title">
+                  Personaliza Tu Propio Arreglo
+                </h2>
+                <p className="custom-product-subtitle">
+                  Crea una pieza única y especial
+                </p>
                 <p className="custom-product-description">
-                  ¿Tienes una visión? En Oriah podemos hacerla realidad. Desde flores de yeso personalizadas 
-                  hasta arreglos aromáticos a tu medida, diseñamos cada detalle según tus preferencias y presupuesto. 
-                  Contacta con nosotros para conocer las opciones de personalización disponibles.
+                  ¿Tienes una visión? En Oriah podemos hacerla realidad. Desde
+                  flores de yeso personalizadas hasta arreglos aromáticos a tu
+                  medida, diseñamos cada detalle según tus preferencias y
+                  presupuesto. Contacta con nosotros para conocer las opciones
+                  de personalización disponibles.
                 </p>
                 <a
                   href="https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x"
@@ -250,7 +256,11 @@ export default function MainContent() {
                 </a>
               </div>
               <div className="custom-product-image">
-                <img src={product12} alt="Personalización" className="custom-image" />
+                <img
+                  src={product12}
+                  alt="Personalización"
+                  className="custom-image"
+                />
               </div>
             </div>
           </div>
