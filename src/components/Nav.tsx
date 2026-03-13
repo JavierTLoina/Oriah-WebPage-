@@ -83,15 +83,6 @@ export default function Nav({ mode, toggleMode, textColor }: NavProps) {
               Contacto
             </a>
           </li>
-          <li>
-            <a
-              href="#contacto"
-              onClick={() => setMenuOpen(false)}
-              className="menu-contact-btn"
-            >
-              Contáctanos
-            </a>
-          </li>
         </ul>
 
         <div className="menu-2">

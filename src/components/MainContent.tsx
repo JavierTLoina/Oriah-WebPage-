@@ -151,12 +151,14 @@ export default function MainContent() {
             Oriah nace del deseo de crear piezas con intención y significado.
             Aquí creamos piezas artesanales pensadas para transformar momentos
             en detalles especiales. Nos enfocamos en la elaboración de velas
-            artesanales, piezas en yeso y bouquet de velas y de yeso. Cada una
-            de nuestras piezas es hecha a mano con cuidado y dedicación, con el
-            objetivo de darle a nuestros clientes piezas diseñadas para regalas,
-            decorar y acompañar distintos espaicos. Nuestro compromiso es
-            entregar calidad, diseño y detalle para que cada vela o pieza
-            decorativa llegue a tus manos lista para iluminar y decorar. 27:1
+            artesanales, piezas en yeso y bouquet de velas y de yeso.
+            <br />
+            <br /> Cada una de nuestras piezas es hecha a mano con cuidado y
+            dedicación, con el objetivo de darle a nuestros clientes piezas
+            diseñadas para regalas, decorar y acompañar distintos espaicos.
+            Nuestro compromiso es entregar calidad, diseño y detalle para que
+            cada vela o pieza decorativa llegue a tus manos lista para iluminar
+            y decorar. 27:1
           </p>
 
           <div className="about-features">
@@ -262,6 +264,108 @@ export default function MainContent() {
                   className="custom-image"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="care-section">
+          <h2 className="care-title">Tips de cuidado para tus piezas</h2>
+
+          <div className="care-features">
+            {/* Limpieza */}
+            <div className="care-card">
+              <div className="care-icon sparkle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"
+                  />
+                </svg>
+              </div>
+
+              <h3>Limpieza</h3>
+              <p>
+                Usa un paño suave y agua limpia. Evita químicos abrasivos que
+                puedan dañar el sellador o el concreto.
+              </p>
+            </div>
+
+            {/* Golpes */}
+            <div className="care-card">
+              <div className="care-icon shield">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                  />
+                </svg>
+              </div>
+
+              <h3>Golpes</h3>
+              <p>
+                Aunque las piezas son resistentes, evita caídas o golpes fuertes
+                para mantenerlas en perfecto estado.
+              </p>
+            </div>
+
+            {/* Trato */}
+            <div className="care-card">
+              <div className="care-icon careful">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728L5.636 5.636"
+                  />
+                </svg>
+              </div>
+
+              <h3>Trato</h3>
+              <p>
+                Cuídalas como una pieza de cerámica o vidrio. El concreto
+                artesanal también puede ser delicado.
+              </p>
+            </div>
+
+            {/* Variaciones */}
+            <div className="care-card">
+              <div className="care-icon heart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                  />
+                </svg>
+              </div>
+
+              <h3>Variaciones</h3>
+              <p>
+                Cada pieza es única. Las variaciones de color y pequeñas
+                burbujas forman parte natural de su belleza.
+              </p>
             </div>
           </div>
         </div>
