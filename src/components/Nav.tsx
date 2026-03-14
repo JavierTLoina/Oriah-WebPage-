@@ -147,3 +147,4 @@ export default function Nav({ mode, toggleMode, textColor }: NavProps) {
     </>
   );
 }
+

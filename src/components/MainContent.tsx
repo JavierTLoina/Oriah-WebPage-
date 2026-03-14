@@ -32,9 +32,9 @@ const products = [
   {
     id: 1,
     image: product1,
-    title: "Joyero Minimalista de Yeso",
+    title: "Joyero Minimalista de escayola",
     description:
-      "Joyero pequeño elaborado a mano en yeso y cemento blanco, de diseño minimalista y elegante. Ideal para guardar joyas y pequeños objetos, aportando orden y estética a cualquier espacio. Medidas: aproximadamente 0.12 de ancho por 0.12 de largo y una altura de 0.80 metros",
+      "Joyero pequeño elaborado a mano en escayola y cemento blanco, de diseño minimalista y elegante. Ideal para guardar joyas y pequeños objetos, aportando orden y estética a cualquier espacio. Medidas: aproximadamente 0.12 de ancho por 0.12 de largo y una altura de 0.80 metros",
     price: "RD$160",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
@@ -42,20 +42,20 @@ const products = [
   {
     id: 2,
     image: product2,
-    title: "Bouquet de Flores de Yeso",
+    title: "Bouquet de Flores",
     description:
-      "Arreglo floral compuesto por 4 a 5 flores de yeso de distintos tamaños, y diversas decoraciones, con base sólida de yeso y cemento. Una pieza decorativa pensada para regalar y conservar en el tiempo. Medidas: aproximadamente un diámetro de 0.13 metros y una altura de 0.09 metros.",
-    price: "RD$300",
+      "Arreglo floral compuesto por 4 a 5 flores de escayola o de cera de distintos tamaños, y diversas decoraciones, con base sólida de escayola y cemento. Una pieza decorativa pensada para regalar y conservar en el tiempo. Medidas: aproximadamente un diámetro de 0.13 metros y una altura de 0.09 metros.",
+    price: "Desde  RD$300",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
   },
   {
     id: 3,
     image: product3,
-    title: "Base Floral Elegante",
+    title: "Arreglo 3 en 1",
     description:
-      "Base decorativa de diseño abstracto que integra 2 o 3 flores de yeso, con opción de incluir una vela. Ideal para aportar carácter, equilibrio y un toque artístico a cualquier ambiente. Medidas: 0.15 metros de diámetro.",
-    price: "RD$280",
+      "Conjunto de 3 piezas de eleccion con opción de incluir una vela, ideal para aportar carácter, equilibrio y un toque artístico a cualquier ambiente. Medidas de base: 0.20metros de largo y 0.13metros de ancho.",
+    price: "RD$400",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
   },
@@ -74,7 +74,7 @@ const products = [
     image: product5,
     title: "Vela Aromática Envolvente",
     description:
-      "Vela aromática presentada en una base de yeso pequeña con forma de corazón y flor decorativa. Diseñada para crear atmósferas acogedoras y convertirse en un regalo significativo.",
+      "Vela aromática presentada en una base de escayola pequeña con forma de corazón y flor decorativa. Diseñada para crear atmósferas acogedoras y convertirse en un regalo significativo.",
     price: "RD$220",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
@@ -82,10 +82,10 @@ const products = [
   {
     id: 6,
     image: product6,
-    title: "Obra de Arte Geométrica",
+    title: "Portalapices Creativo",
     description:
-      "Bouquet compacto elaborado con una flor de vela, disponible con o sin mecha. Un detalle delicado y versátil para regalar o decorar espacios pequeños. Medida: aproximadamente 0.13 metros de diametro y de altura 0.14 metos.",
-    price: "RD$450",
+      "Portalapices compacto de color natural elaborado de escayola. Un detalle delicado y versátil para regalar o decorar espacios pequeños. Medida: aproximadamente 0.90 metros de diametro y de altura 0.14 metos.",
+    price: "RD$300",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
   },
@@ -122,20 +122,20 @@ const products = [
   {
     id: 10,
     image: product10,
-    title: "Arreglo Floral Mixto",
+    title: "Pieza decorativa con velas",
     description:
-      "Combinación armoniosa de flores de yeso y velas aromáticas en una base decorativa. Una creación versátil que une belleza visual con aroma delicado, perfecta para regalos especiales.",
-    price: "RD$380",
+      "Combinación armoniosa de flores de vela y Oso de escayola en una base decorativa. Una creación versátil que une belleza visual con aroma delicado, perfecta para regalos especiales.",
+    price: "RD$350",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
   },
   {
     id: 11,
     image: product11,
-    title: "Escultura de Yeso Artística",
+    title: "Escultura de escayola Carrusel",
     description:
-      "Pieza escultórica desarrollada con técnicas artesanales avanzadas. Cada detalle es cuidadosamente moldeado para crear una obra de arte única que transformará cualquier espacio.",
-    price: "RD$320",
+      "Pieza artistica que puede servir de joyero o con fines decorativos. Cada detalle es una obra de arte única que transformará cualquier espacio.",
+    price: "RD$300",
     instagramUrl:
       "https://www.instagram.com/oficialoriah?utm_source=qr&igsh=bnh5YzM4ejBuNW5x",
   },
@@ -151,14 +151,14 @@ export default function MainContent() {
             Oriah nace del deseo de crear piezas con intención y significado.
             Aquí creamos piezas artesanales pensadas para transformar momentos
             en detalles especiales. Nos enfocamos en la elaboración de velas
-            artesanales, piezas en yeso y bouquet de velas y de yeso.
+            artesanales, piezas en escayola y bouquet de velas y de escayola.
             <br />
             <br /> Cada una de nuestras piezas es hecha a mano con cuidado y
             dedicación, con el objetivo de darle a nuestros clientes piezas
             diseñadas para regalas, decorar y acompañar distintos espaicos.
             Nuestro compromiso es entregar calidad, diseño y detalle para que
             cada vela o pieza decorativa llegue a tus manos lista para iluminar
-            y decorar. 27:1
+            y decorar.
           </p>
 
           <div className="about-features">
@@ -214,16 +214,16 @@ export default function MainContent() {
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">{product.title}</h3>
-                  <p className="product-description">{product.description}</p>
                   <span className="product-price-large">{product.price}</span>
+                  <p className="product-description">{product.description}</p>
                   <a
                     href={product.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-instagram"
-                    aria-label={`Ver ${product.title} en Instagram`}
+                    className="btn-buy"
+                    aria-label={`Comprar ahora ${product.title}`}
                   >
-                    Instagram
+                    Comprar ahora
                   </a>
                 </div>
               </div>
@@ -243,8 +243,8 @@ export default function MainContent() {
                 </p>
                 <p className="custom-product-description">
                   ¿Tienes una visión? En Oriah podemos hacerla realidad. Desde
-                  flores de yeso personalizadas hasta arreglos aromáticos a tu
-                  medida, diseñamos cada detalle según tus preferencias y
+                  flores de escayola personalizadas hasta arreglos aromáticos a
+                  tu medida, diseñamos cada detalle según tus preferencias y
                   presupuesto. Contacta con nosotros para conocer las opciones
                   de personalización disponibles.
                 </p>
